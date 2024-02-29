@@ -11,7 +11,7 @@ App.addListener('appStateChange', async(state) => {
        // Do the download during user active app time to prevent failed download
        data = await CapacitorUpdater.download({
        version: '2.0.0',
-       url: 'https://github.com/Sivaraman1530/sample-test/archive/refs/tags/v-8.zip',
+       url: 'https://github.com/Sivaraman1530/auto/archive/refs/tags/v2.zip',
        })
      }
      console.log("data",JSON.stringify(data))
