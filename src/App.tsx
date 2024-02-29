@@ -33,12 +33,14 @@ import '@ionic/react/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
+import InitializeApp from './update';
 
 setupIonicReact();
 
 const App: React.FC = () => (
   <IonApp>
     <IonReactRouter>
+      <InitializeApp/>
       <IonTabs>
         <IonRouterOutlet>
           <Route exact path="/tab1">
@@ -57,7 +59,7 @@ const App: React.FC = () => (
         <IonTabBar slot="bottom">
           <IonTabButton tab="tab1" href="/tab1">
             <IonIcon aria-hidden="true" icon={triangle} />
-            <IonLabel>Tab 1 version 1</IonLabel>
+            <IonLabel>Tab 1 version 3</IonLabel>
           </IonTabButton>
           <IonTabButton tab="tab2" href="/tab2">
             <IonIcon aria-hidden="true" icon={ellipse} />
